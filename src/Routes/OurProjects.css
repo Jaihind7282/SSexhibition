@@ -1,0 +1,133 @@
+.our-projects-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.projects-introduction {
+  margin-bottom: 40px;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.projects-introduction h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.projects-introduction p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 20px 0;
+}
+
+.tags {
+  margin-top: 20px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #cd382c;
+  color: white;
+  padding: 5px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+/* Container for the projects */
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Project item styling */
+.project-item {
+  padding: 20px;
+  width: 40%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for project items */
+.project-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Styling for project images */
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Project title styling */
+.project-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #cb382c;
+  margin-bottom: 10px;
+}
+
+/* Project address and date styling */
+.project-address,
+.project-date {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Project description styling */
+.project-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive design for tablet */
+@media (max-width: 768px) {
+  .project-item {
+    width: 45%;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+  .our-projects-container {
+    padding: 0px;
+  }
+  .projects-introduction {
+    width: 100%;
+    margin: 40px auto;
+  }
+  .project-item {
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+  .projects-introduction p {
+    font-size: 0.9rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+}

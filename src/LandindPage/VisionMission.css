@@ -1,0 +1,84 @@
+/* Container for the vision and mission sections */
+.vision-mission-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Vision or Mission section */
+.vision-section,
+.mission-section {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Text container */
+.text-container {
+  flex: 1;
+}
+
+/* Heading styling */
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Description paragraph */
+.description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Learn More link styled as a button */
+.learn-more-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #cb382c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-link:hover {
+  background-color: #626262;
+}
+
+/* Responsive design for tablet */
+@media (max-width: 768px) {
+  .vision-section,
+  .mission-section {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+  .vision-section,
+  .mission-section {
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}

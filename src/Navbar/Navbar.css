@@ -1,0 +1,122 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffff;
+}
+.NavbarItems {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 2.5rem;
+  margin: 0 auto;
+  z-index: 1000;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 3rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #3b3b3b;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-right: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links i {
+  padding-right: 10px;
+}
+
+.nav-links:hover {
+  color: #cb382e;
+  font-size: 1.05rem;
+}
+.fa-phone:hover {
+  color: #cb382e;
+}
+.fa-bars:hover {
+  color: #cb382e;
+}
+
+.menu-icons {
+  display: none;
+}
+
+.fa-bars,
+.fa-phone {
+  color: #3b3b3b;
+}
+.navbar-image-div {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 20px auto;
+}
+.navbar-image {
+  width: 20%;
+  padding: 0.8rem 0 0 0;
+}
+
+@media screen and (max-width: 850px) {
+  .NavbarItems {
+    justify-content: space-between;
+    height: 35px;
+    padding: 0 40px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+    height: 100%;
+    position: fixed;
+    grid-gap: 1rem;
+    top: 0;
+    right: -100%;
+    opacity: 0;
+    align-items: flex-start;
+    padding: 0.5rem 40px;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+    box-shadow: 5px 15px 15px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 50px 0;
+    transition: all 0.5s ease-in-out;
+    margin-top: 7.25rem;
+  }
+  .nav-menu.active {
+    right: 0;
+    opacity: 1;
+  }
+
+  .nav-links {
+    display: block;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .menu-icons {
+    display: block;
+  }
+  .menu-icons i {
+    font-size: 1.3rem;
+  }
+  .navbar-image-div {
+    margin: 0px auto;
+  }
+  .navbar-image {
+    width: auto;
+    height: 4rem;
+  }
+}

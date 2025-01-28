@@ -1,0 +1,46 @@
+/* General styling */
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.stats-item {
+  text-align: center;
+  width: 30%;
+  margin: 10px;
+}
+
+.stats-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #cb382c;
+}
+
+.stats-title {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.stats-description {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .stats-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

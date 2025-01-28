@@ -1,0 +1,103 @@
+/* Container for testimonials */
+.testimonials-container {
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.testimonials-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Styling for each testimonial item */
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+/* Centering the image */
+.testimonial-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the rounded image */
+.testimonial-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Styling for testimonial content */
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Name styling */
+.testimonial-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Rating stars styling */
+.testimonial-rating {
+  margin-bottom: 15px;
+  color: #f1c40f;
+}
+
+/* Comment styling */
+.testimonial-comment {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive design for tablet and mobile */
+@media (max-width: 768px) {
+  .testimonials-container {
+    padding: 30px 0px;
+  }
+
+  .testimonial-item {
+    padding: 15px;
+  }
+
+  .testimonial-name {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-comment {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-item {
+    padding: 0px;
+  }
+
+  .testimonial-name {
+    font-size: 1rem;
+  }
+
+  .testimonial-comment {
+    font-size: 0.8rem;
+  }
+}

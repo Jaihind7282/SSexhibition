@@ -1,0 +1,122 @@
+/* Main container */
+.about-us-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section for About Us */
+.about-section,
+.leadership-section,
+.mission-vision-section,
+.strength-values-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/* Adjust image and text to be 50% each */
+.about-image,
+.leadership-image,
+.mission-vision-image,
+.strength-values-image {
+  width: 50%;
+}
+
+.about-details,
+.leadership-details,
+.mission-vision-details,
+.strength-values-details {
+  width: 50%;
+  padding: 20px;
+  text-align: left;
+}
+
+/* General styling for the images */
+.about-image img,
+.leadership-image img,
+.mission-vision-image img,
+.strength-values-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Heading and paragraph styles */
+.about-details h2,
+.leadership-details h2,
+.mission-vision-details h2,
+.strength-values-details h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #cb382c;
+}
+
+.about-details p,
+.leadership-details p,
+.mission-vision-details p,
+.strength-values-details p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* List styling for Strength & Values section */
+.strength-values-details ul {
+  font-size: 1.1rem;
+  color: #555;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.strength-values-details ul li {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .about-section,
+  .leadership-section,
+  .mission-vision-section,
+  .strength-values-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image,
+  .leadership-image,
+  .mission-vision-image,
+  .strength-values-image,
+  .about-details,
+  .leadership-details,
+  .mission-vision-details,
+  .strength-values-details {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .about-section,
+  .leadership-section,
+  .mission-vision-section,
+  .strength-values-section {
+    flex-direction: column;
+  }
+
+  .about-image,
+  .leadership-image,
+  .mission-vision-image,
+  .strength-values-image,
+  .about-details,
+  .leadership-details,
+  .mission-vision-details,
+  .strength-values-details {
+    width: 100%;
+    padding: 10px;
+  }
+}
