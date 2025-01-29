@@ -28,6 +28,30 @@ const clients = [
     id: 6,
     image: "images/cabcon.jpg",
   },
+  {
+    id: 7,
+    image: "images/pan-east-logo.jpg",
+  },
+  {
+    id: 8,
+    image: "images/sands-logi.jpg",
+  },
+  {
+    id: 9,
+    image: "images/Neocab-logo.jpg",
+  },
+  {
+    id: 10,
+    image: "images/sant-rubbers-logo.jpg",
+  },
+  {
+    id: 11,
+    image: "images/anjali-granite-logo.jpg",
+  },
+  {
+    id: 12,
+    image: "images/nova-logo.jpg",
+  },
 ];
 
 const OurClients = () => {

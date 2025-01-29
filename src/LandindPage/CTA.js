@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./CTA.css";
 
 const CTA = () => {
@@ -7,9 +8,10 @@ const CTA = () => {
       <div className="cta-content">
         <h2>SS Events & Exhibitions</h2>
         <p>Don't miss the chance to explore unique exhibits and experiences.</p>
-        <a href="/contact" className="cta-button">
+        <Link to="/contact" className="cta-button">
+          {" "}
           Contact Now
-        </a>
+        </Link>
       </div>
     </div>
   );
